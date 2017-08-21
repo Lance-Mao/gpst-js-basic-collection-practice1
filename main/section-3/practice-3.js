@@ -1,14 +1,9 @@
 'use strict';
 
 function find(collection, ch) {
-    for (let item of collection) {
-        if (item.key === ch) {
-            return item;
-        }
-    }
-
-    return null;
+     return  collection.filter(value => (value.key === ch))[0];
 }
+
 
 function summarize(collection) {
     let result = [];
